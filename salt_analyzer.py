@@ -99,6 +99,9 @@ def warn_txt(s: str) -> str:
 # -------------- Modes --------------
 
 SUPPORTED_MODES = {
+    # osCommerce
+    21:   "osCommerce, xt:Commerce",
+    
     # MD5 salted
     10:   "md5($pass.$salt)",
     20:   "md5($salt.$pass)",
@@ -777,3 +780,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print(f"\n{tag('error')} Interrupted.", file=sys.stderr)
         raise
+
